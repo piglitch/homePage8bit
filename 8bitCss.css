@@ -79,3 +79,16 @@ a:hover {
 		transform: translateX(300px) scaleX(-1); /* Set the starting position and flip the image horizontally */
 	}
 }
+
+/* Hole */
+
+.hole {
+	position: absolute;
+	bottom: 200px; /* Set the position where you want the hole to be */
+	left: 50%; /* Center the hole horizontally */
+	transform: translateX(-50%); /* Center the hole horizontally */
+	width: 100px;
+	height: 70px;
+	background-image: url("hole.png");
+	background-size: contain;
+}
