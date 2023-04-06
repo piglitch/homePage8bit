@@ -1,0 +1,80 @@
+body {
+	background-image: url("bG.jpg");
+    background-size: cover;
+	font-family: 'Press Start 2P', cursive;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 600px;
+	padding: 50px 20px;
+	position: relative; /* Add a relative position to the container */
+}
+
+.header {
+	text-align: center;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 48px;
+	margin: 0;
+}
+
+h2 {
+	color: #FFFFFF;
+	font-size: 24px;
+	margin: 20px 0 0;
+}
+
+.menu {
+	margin-top: 50px;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+a {
+	color: #FFFFFF;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FF0000;
+}
+
+/* Add the bunny image and animation properties */
+.bunny {
+	position: absolute;
+	top: 200px; /* Adjust the top position to your preference */
+	left: -100px; /* Set the starting position outside the screen */
+	background-image: url("bunny.gif");
+	background-size: contain;
+	width: 100px;
+	height: 70px;
+	animation: walk 2s linear infinite; /* Add the animation */
+}
+
+@keyframes walk {
+	0% {
+		transform: translateX(-100px) scaleX(-1); /* Set the starting position and flip the image horizontally */
+	}
+	50% {
+		transform: translateX(calc(100% + 100px)) scaleX(-1); /* Set the ending position and flip the image horizontally */
+	}
+	100% {
+		transform: translateX(-100px) scaleX(-1); /* Set the starting position and flip the image horizontally */
+	}
+}
