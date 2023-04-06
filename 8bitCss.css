@@ -58,23 +58,24 @@ a:hover {
 /* Add the bunny image and animation properties */
 .bunny {
 	position: absolute;
-	top: 200px; /* Adjust the top position to your preference */
-	left: -100px; /* Set the starting position outside the screen */
+	top: 580px; /* Adjust the top position to your preference */
+	right: -200px; /* Set the starting position outside the screen */
 	background-image: url("bunny.gif");
 	background-size: contain;
 	width: 100px;
 	height: 70px;
-	animation: walk 2s linear infinite; /* Add the animation */
+	animation: walk 7s linear infinite; /* Add the animation */
+	animation-direction: reverse;
 }
 
 @keyframes walk {
 	0% {
-		transform: translateX(-100px) scaleX(-1); /* Set the starting position and flip the image horizontally */
+		transform: translateX(-700px) scaleX(-1); /* Set the starting position and flip the image horizontally */
 	}
-	50% {
-		transform: translateX(calc(100% + 100px)) scaleX(-1); /* Set the ending position and flip the image horizontally */
+	20% {
+		transform: translateX(calc(100 + 100px)) scaleX(1); /* Set the ending position and flip the image horizontally */
 	}
 	100% {
-		transform: translateX(-100px) scaleX(-1); /* Set the starting position and flip the image horizontally */
+		transform: translateX(300px) scaleX(-1); /* Set the starting position and flip the image horizontally */
 	}
 }
