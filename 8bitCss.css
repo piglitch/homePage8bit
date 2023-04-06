@@ -66,7 +66,7 @@ a:hover {
 	height: 70px;
 	animation: walk 7s linear infinite; /* Add the animation */
 	animation-direction: reverse;
-	animation-timing-function: cubic-bezier(0.95, 0.54, 0.44, 1);
+	animation-timing-function: ease-in-out;
 }
 
 @keyframes walk {
@@ -74,7 +74,7 @@ a:hover {
 		transform: translateX(-700px) scaleX(-1); /* Set the starting position and flip the image horizontally */
 		opacity: 0;
 	}
-	20% {
+	10% {
 		transform: translateX(calc(100 + 100px)) scaleX(1); /* Set the ending position and flip the image horizontally */
 		opacity: 1;
 	}
@@ -89,14 +89,37 @@ a:hover {
 .hole {
 	position: absolute;
 	top: 570px; /* Set the position where you want the hole to be */
-	left: 12%; /* Center the hole horizontally */
+	left: 5%; /* Center the hole horizontally */
 	transform: translateX(-50%); /* Center the hole horizontally */
 	width: 100px;
 	height: 100px;
 	background-image: url("portal.gif");
 	background-size: contain;
-	transform: scale(-1, -1);
+	transform: scaleX(-1);
+	animation: appear 7s linear infinite;
+	animation-timing-function: ease-in;
 }
+
+@keyframes appear {
+
+	0% {
+		transform: translateX(0%) scaleX(-1); /* Set the end position and flip the image horizontally */
+		opacity: 0;
+	}
+	70%{
+		transform: translateX(0%) scaleX(-1); /* Set the end position and flip the image horizontally */
+		opacity: 1;
+	}
+	90%{
+		transform: translateX(0%) scaleX(-1); /* Set the end position and flip the image horizontally */
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(0%) scaleX(-1); /* Set the end position and flip the image horizontally */
+		opacity: 0;
+	}
+}
+
 
 .gif-container {
 	position: absolute;
