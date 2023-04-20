@@ -1,0 +1,42 @@
+body {
+	background-color: #000000;
+	color: #FFFFFF;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	padding: 20px;
+	text-align: center;
+    color: red;
+}
+
+h1 {
+	font-size: 3em;
+	margin: 0;
+}
+
+main {
+	padding: 20px;
+}
+
+section {
+	margin-bottom: 20px;
+}
+
+h2 {
+	font-size: 2em;
+	margin: 0;
+}
+
+p {
+	line-height: 1.5em;
+	margin-top: 0;
+}
+footer{
+    position: absolute;
+    bottom: 1px;
+    color: blue;
+}
