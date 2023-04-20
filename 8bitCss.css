@@ -1,6 +1,8 @@
 body {
-	background-image: url("bG.jpg");
-    background-size: cover;
+	position: static;
+	background: no-repeat url("bG.jpg");
+	height: 100vh;
+	background-size: cover;
 	font-family: 'Press Start 2P', cursive;
 	margin: 0;
 	padding: 0;
