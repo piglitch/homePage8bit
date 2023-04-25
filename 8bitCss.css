@@ -6,6 +6,7 @@ body {
 	font-family: 'Press Start 2P', cursive;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .container {
@@ -59,9 +60,9 @@ a:hover {
 
 /* Add the bunny image and animation properties */
 .bunny {
-	position: absolute;
+	position: relative;
 	top: 580px; /* Adjust the top position to your preference */
-	right: -200px; /* Set the starting position outside the screen */
+	right: 200px; /* Set the starting position outside the screen */
 	background-image: url("bunny.gif");
 	background-size: contain;
 	width: 100px;
@@ -122,18 +123,6 @@ a:hover {
 	}
 }
 
-
-.gif-container {
-	position: absolute;
-	bottom: 250px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 200px;
-	height: 150px;
-	background-image: url("vanishing.gif");
-	background-size: contain;
-	animation: vanish 2s linear forwards;
-}
 
 @keyframes vanish {
 	0% {
