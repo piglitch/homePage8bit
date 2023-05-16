@@ -74,3 +74,17 @@ a:hover{
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
+
+
+
+.desc{
+    position: absolute;
+    top: 70%;
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+#js{
+    font-size: larger;
+}
