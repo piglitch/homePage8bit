@@ -11,7 +11,15 @@ function redirectToSkillPage(event) {
   window.location.href = 'skill.html';
 }
   
-  
+function updateContact() {
+  let accordion = document.getElementsByClassName('accordion-container');
+  for (let i = 0; i < accordion.length; i++) {
+    accordion[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+    });
+  }
+}
+
 
 // Call shared functions on specific pages
 if (document.getElementById('skills')) {
@@ -26,3 +34,9 @@ if (document.getElementById('skl')) {
 if (document.getElementById('js')) {
   updateDescriptionText();
 }
+
+if (document.getElementsByClassName('accordion-container')){
+  updateContact();
+}
+
+
